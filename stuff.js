@@ -1,29 +1,37 @@
 
-
 // --------------------------------------------------------------------------------------------
                             //  First way
 // --------------------------------------------------------------------------------------------
 
+// var counter = function(arr){
 
-// var counter  = require('./count');
+//     return 'there are ' + arr.length + ' element in this array '
+    
+// };
 
-// console.log(counter(['ashok','ranera','abc']));
-
-
+// module.exports = counter;
 
 
 // --------------------------------------------------------------------------------------------
                             //  Second way
 // --------------------------------------------------------------------------------------------
 
-
 // chane the file name count to stuff
 
-// var stuff = require('./stuff')
 
-// console.log(stuff.counter(['ashok','ranera','abc']));
+// var counter = function(arr){
 
-// console.log(stuff.addre(10,20));
+//     return 'there are ' + arr.length + ' element in this array '
+    
+// };
+
+// var addre = function(a,b){
+
+//  return `the sum of the 2 number is ${a+b}`;
+
+// };
+// module.exports.counter = counter;
+// module.exports.addre = addre;
 
 
 // --------------------------------------------------------------------------------------------
@@ -31,11 +39,17 @@
 // --------------------------------------------------------------------------------------------
 
 
-// var stuff = require('./stuff')
+// module.exports.counter = function(arr){
 
-// console.log(stuff.counter(['ashok','ranera','abc']));
+//     return 'there are ' + arr.length + ' element in this array '
+    
+// };
 
-// console.log(stuff.addre(10,20));
+// module.exports.addre = function(a,b){
+
+//  return `the sum of the 2 number is ${a+b}`;
+
+// };
 
 
 // --------------------------------------------------------------------------------------------
@@ -43,12 +57,19 @@
 // --------------------------------------------------------------------------------------------
 
 
-// var stuff = require('./stuff')
+// var counter = function(arr){
 
-// console.log(stuff.counter(['ashok','ranera','abc']));
+//     return 'there are ' + arr.length + ' element in this array '
+    
+// };
 
-// console.log(stuff.addre(10,20));
+// var addre = function(a,b){
 
-// --------------------------------------------------------------------------------------------
-                        //   sum and mul  to Number
-// --------------------------------------------------------------------------------------------
+//  return `the sum of the 2 number is ${a+b}`;
+
+// };
+
+// module.exports = {
+//     counter : counter,
+//     addre : addre
+// };
